@@ -1,0 +1,36 @@
+﻿@model List<ClientDto>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<a href="/Client/Add">Добавить владельца квартиры</a>
+<div class="text-start">
+    <h1 class="display-4">Список владельцев квартир</h1>
+
+
+    @if (!string.IsNullOrEmpty(TempData["Message"]?.ToString()))
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["Message"]
+        </div>
+    }
+    <table class="table">
+        @foreach(var client in Model)
+        {
+            <tr>
+                <td>@client.Id</td>
+                <td>@client.Fullname</td>
+                <td>@client.Email</td>
+                <td>@client.ApartId</td>
+                <td>@client.Street</td>
+                <td>@client.Housenumber</td>
+                <td>@client.Apartnumber</td>  
+                <td>
+                    <a href=@Url.Action("Remove","Client", new {id =client.Id})>Удалить</a>
+                    <a href="/Client/Edit/@client.Id">Редактировать</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+
+</div>

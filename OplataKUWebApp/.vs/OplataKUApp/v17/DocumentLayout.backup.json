@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF193A4A-A5D3-4A3F-B805-CBF2F4FBFA22}|OplataKUApp\\OplataKUWebApp.csproj|c:\\users\\dashulkin\\source\\repos\\oplatakuwebapp\\oplatakuapp\\views\\client\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF193A4A-A5D3-4A3F-B805-CBF2F4FBFA22}|OplataKUApp\\OplataKUWebApp.csproj|solutionrelative:oplatakuapp\\views\\client\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF193A4A-A5D3-4A3F-B805-CBF2F4FBFA22}|OplataKUApp\\OplataKUWebApp.csproj|c:\\users\\dashulkin\\source\\repos\\oplatakuwebapp\\oplatakuapp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF193A4A-A5D3-4A3F-B805-CBF2F4FBFA22}|OplataKUApp\\OplataKUWebApp.csproj|solutionrelative:oplatakuapp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF193A4A-A5D3-4A3F-B805-CBF2F4FBFA22}|OplataKUApp\\OplataKUWebApp.csproj|c:\\users\\dashulkin\\source\\repos\\oplatakuwebapp\\oplatakuapp\\models\\client\\clienteditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF193A4A-A5D3-4A3F-B805-CBF2F4FBFA22}|OplataKUApp\\OplataKUWebApp.csproj|solutionrelative:oplatakuapp\\models\\client\\clienteditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF193A4A-A5D3-4A3F-B805-CBF2F4FBFA22}|OplataKUApp\\OplataKUWebApp.csproj|c:\\users\\dashulkin\\source\\repos\\oplatakuwebapp\\oplatakuapp\\models\\client\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF193A4A-A5D3-4A3F-B805-CBF2F4FBFA22}|OplataKUApp\\OplataKUWebApp.csproj|solutionrelative:oplatakuapp\\models\\client\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF193A4A-A5D3-4A3F-B805-CBF2F4FBFA22}|OplataKUApp\\OplataKUWebApp.csproj|c:\\users\\dashulkin\\source\\repos\\oplatakuwebapp\\oplatakuapp\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF193A4A-A5D3-4A3F-B805-CBF2F4FBFA22}|OplataKUApp\\OplataKUWebApp.csproj|solutionrelative:oplatakuapp\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB8AB6E-1F9D-42CD-81BA-924C98F15F80}|OplataKUWebApi\\OplataKUWebApi.csproj|c:\\users\\dashulkin\\source\\repos\\oplatakuwebapp\\oplatakuwebapi\\models\\clientgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB8AB6E-1F9D-42CD-81BA-924C98F15F80}|OplataKUWebApi\\OplataKUWebApi.csproj|solutionrelative:oplatakuwebapi\\models\\clientgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB8AB6E-1F9D-42CD-81BA-924C98F15F80}|OplataKUWebApi\\OplataKUWebApi.csproj|c:\\users\\dashulkin\\source\\repos\\oplatakuwebapp\\oplatakuwebapi\\controllers\\clientinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB8AB6E-1F9D-42CD-81BA-924C98F15F80}|OplataKUWebApi\\OplataKUWebApi.csproj|solutionrelative:oplatakuwebapi\\controllers\\clientinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6FBC1AE-E87E-4950-A36F-E511931EA204}|ClientInfoData\\ClientInfoData.csproj|c:\\users\\dashulkin\\source\\repos\\oplatakuwebapp\\clientinfodata\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6FBC1AE-E87E-4950-A36F-E511931EA204}|ClientInfoData\\ClientInfoData.csproj|solutionrelative:clientinfodata\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUApp\\Views\\Client\\Edit.cshtml",
+              "RelativeDocumentMoniker": "OplataKUApp\\Views\\Client\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUApp\\Views\\Client\\Edit.cshtml",
+              "RelativeToolTip": "OplataKUApp\\Views\\Client\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T15:19:22.429Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientInfoController.cs",
+              "DocumentMoniker": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUWebApi\\Controllers\\ClientInfoController.cs",
+              "RelativeDocumentMoniker": "OplataKUWebApi\\Controllers\\ClientInfoController.cs",
+              "ToolTip": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUWebApi\\Controllers\\ClientInfoController.cs",
+              "RelativeToolTip": "OplataKUWebApi\\Controllers\\ClientInfoController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwFAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T05:41:42.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientEditDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUApp\\Models\\Client\\ClientEditDto.cs",
+              "RelativeDocumentMoniker": "OplataKUApp\\Models\\Client\\ClientEditDto.cs",
+              "ToolTip": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUApp\\Models\\Client\\ClientEditDto.cs*",
+              "RelativeToolTip": "OplataKUApp\\Models\\Client\\ClientEditDto.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T05:32:42.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUWebApi\\Models\\ClientGetDto.cs",
+              "RelativeDocumentMoniker": "OplataKUWebApi\\Models\\ClientGetDto.cs",
+              "ToolTip": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUWebApi\\Models\\ClientGetDto.cs",
+              "RelativeToolTip": "OplataKUWebApi\\Models\\ClientGetDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:32:16.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClientInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\ClientInfoData\\ClientInfo.cs",
+              "RelativeDocumentMoniker": "ClientInfoData\\ClientInfo.cs",
+              "ToolTip": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\ClientInfoData\\ClientInfo.cs",
+              "RelativeToolTip": "ClientInfoData\\ClientInfo.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T06:47:29.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUApp\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "OplataKUApp\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUApp\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "OplataKUApp\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAAHIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T10:30:41.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUApp\\Views\\Client\\Index.cshtml",
+              "RelativeDocumentMoniker": "OplataKUApp\\Views\\Client\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUApp\\Views\\Client\\Index.cshtml",
+              "RelativeToolTip": "OplataKUApp\\Views\\Client\\Index.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T05:31:49.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUApp\\Models\\Client\\ClientDto.cs",
+              "RelativeDocumentMoniker": "OplataKUApp\\Models\\Client\\ClientDto.cs",
+              "ToolTip": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\OplataKUApp\\Models\\Client\\ClientDto.cs",
+              "RelativeToolTip": "OplataKUApp\\Models\\Client\\ClientDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wBgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T06:02:31.476Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

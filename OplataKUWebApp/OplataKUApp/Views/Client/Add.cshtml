@@ -1,0 +1,56 @@
+﻿@model ClientAddDto
+@{
+
+}
+<div class="text-center">
+    <h1 class="display-4">Форма добавления владельца квартиры</h1>
+    <div asp-validation-summary="All" class="text-start alert alert-warning"> </div>
+
+    <form method="post" action="/Client/Add" class="text-start">
+        <div class="mb-3">
+            <label class="form-label">Фамилия</label>
+            <input type="text" name="Lastname" value="@Model?.Lastname" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Имя</label>
+            <input type="text" name="Firstname" value="@Model?.Firstname" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Отчество</label>
+            <input type="text" name="Midname" value="@Model?.Midname" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">E-mail</label>
+            <input type="text" name="Email" value="@Model?.Email" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Пароль</label>
+            <input type="text" name="Password" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Id квартиры</label>
+            <input type="text" name="ApartId"   class="form-control"  />
+        </div>
+
+       @*  <div class="mb-3">
+            <label class="form-label">Улица</label>
+            <input type="text" name="Street"   class="form-control"  />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Номер дома</label>
+            <input type="text" name="Housenumber"  class="form-control"  />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Номер квартиры</label>
+            <input type="text" name="Apartnumber"  class="form-control"  />
+        </div>
+ *@
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    </form>
+</div>
