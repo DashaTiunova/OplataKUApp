@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj": {}
+    "D:\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj": {
+    "D:\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj",
+        "projectUniqueName": "D:\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj",
         "projectName": "ClientInfoData",
-        "projectPath": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj",
-        "packagesPath": "C:\\Users\\Dashulkin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dashulkin\\source\\repos\\OplataKUWebApp\\ClientInfoData\\obj\\",
+        "projectPath": "D:\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj",
+        "packagesPath": "C:\\Users\\Tiunova.Daria\\.nuget\\packages\\",
+        "outputPath": "D:\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\ClientInfoData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dashulkin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tiunova.Daria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

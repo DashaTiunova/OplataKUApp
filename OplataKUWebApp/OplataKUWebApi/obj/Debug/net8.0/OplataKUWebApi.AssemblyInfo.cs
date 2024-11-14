@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OplataKUWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed20ad944a448ce04dfbae7ffe9d9595f39ee7c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("OplataKUWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OplataKUWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
