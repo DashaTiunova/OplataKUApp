@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "OplataKUWebApi.Models.ClientAddDto",
+        "Type": "OplataKUWebApi.Models.Client.ClientAddDto",
         "IsRequired": true
       }
     ],
@@ -63,7 +63,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "OplataKUWebApi.Models.ClientGetDto",
+        "Type": "OplataKUWebApi.Models.Client.ClientGetDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -77,13 +77,19 @@
     "ContainingType": "OplataKUWebApi.Controllers.ClientController",
     "Method": "GetAll",
     "RelativePath": "Client/GetAll",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "OplataKUWebApi.Models.Client.ClientFilterDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[OplataKUWebApi.Models.ClientGetDto, OplataKUWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[OplataKUWebApi.Models.Client.ClientGetDto, OplataKUWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -1,10 +1,49 @@
-﻿@model List<ClientDto>
+﻿@model OplataKUWebApp.Models.ClientViewModels.ClientViewModel
 @{
     ViewData["Title"] = "Home Page";
 }
-<a href="/Client/Add">Добавить владельца квартиры</a>
-<div class="text-start">
-    <h1 class="display-4">Список владельцев квартир</h1>
+<p><a href="/Client/Add">Добавить владельца квартиры</a></p>
+
+<p><a href="/Apart/IndexApart">К списку квартир</a></p>
+
+<h1 class="display-4">Найти владельца квартиры</h1>
+<div asp-validation-summary="All" class="alert-info"> </div>
+
+    <form method="post" action="/Client/" class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="">
+            <input type="text" name="Lastname" placeholder="Фамилия" class="form-control"  />
+        </div>
+
+        <div class="">
+            <input type="text" name="Firstname" placeholder="Имя" class="form-control" />
+        </div>
+
+        <div class="">
+
+            <input type="text" name="Midname" placeholder="Отчество" class="form-control" />
+        </div>
+
+        <div class="">
+            <input type="text" name="Email" placeholder="Email" class="form-control" />
+        </div>
+
+        <div class="">
+            <select name="ApartId" class="form-control">
+                <option value="">Любая квартира</option>
+                @foreach(var item in Model.PayInfo)
+                {
+                    <option value="@item.ApartId"> @item.ApartId</option>
+                }
+            </select>
+        </div>
+
+        
+            <button type="submit" align="text-start" class="btn btn-primary">Найти</button>
+
+       
+    </form>
+<div class="text-start ">
+<h1 class="display-4">Список владельцев квартир</h1>
 
 
     @if (!string.IsNullOrEmpty(TempData["Message"]?.ToString()))
@@ -14,8 +53,15 @@
         </div>
     }
     <table class="table">
-        @foreach(var client in Model)
+        <tr>
+            <th>Id Владельца</th>
+            <th>Имя</th>
+            <th>Адрес электронной почты</th>
+            <th>Id квартиры</th>
+        </tr>
+        @foreach(var client in Model.Clients)
         {
+           
             <tr>
                 <td>@client.Id</td>
                 <td>@client.Fullname</td>

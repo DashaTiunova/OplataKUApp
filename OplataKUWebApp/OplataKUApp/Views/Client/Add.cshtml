@@ -1,4 +1,4 @@
-﻿@model ClientAddDto
+﻿@model OplataKUWebApp.Models.ClientViewModels.ClientAddViewModel;
 @{
 
 }
@@ -9,22 +9,22 @@
     <form method="post" action="/Client/Add" class="text-start">
         <div class="mb-3">
             <label class="form-label">Фамилия</label>
-            <input type="text" name="Lastname" value="@Model?.Lastname" class="form-control" required />
+            <input type="text" name="Lastname" value="@Model?.Client?.Lastname" class="form-control" required />
         </div>
 
         <div class="mb-3">
             <label class="form-label">Имя</label>
-            <input type="text" name="Firstname" value="@Model?.Firstname" class="form-control" required />
+            <input type="text" name="Firstname" value="@Model?.Client?.Firstname" class="form-control" required />
         </div>
 
         <div class="mb-3">
             <label class="form-label">Отчество</label>
-            <input type="text" name="Midname" value="@Model?.Midname" class="form-control" />
+            <input type="text" name="Midname" value="@Model?.Client?.Midname" class="form-control" />
         </div>
 
         <div class="mb-3">
             <label class="form-label">E-mail</label>
-            <input type="text" name="Email" value="@Model?.Email" class="form-control" />
+            <input type="text" name="Email" value="@Model?.Client?.Email" class="form-control" />
         </div>
 
         <div class="mb-3">
@@ -33,7 +33,13 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Id квартиры</label>
-            <input type="text" name="ApartId"   class="form-control"  />
+            <select name="ApartId" class="form-control">
+                @foreach(var item in Model.PayInfo)
+                {
+                    <option value="@item.ApartId"> @item.ApartId</option>
+                }
+            </select>
+           
         </div>
 
        @*  <div class="mb-3">

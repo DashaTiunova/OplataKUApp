@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OplataKUWebApi.Models;
 using ClientInfoData;
 using Microsoft.EntityFrameworkCore;
 using System.IO;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using OplataKUWebApi.Models.Client;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 
 namespace OplataKUWebApi.Controllers
@@ -34,15 +35,16 @@ namespace OplataKUWebApi.Controllers
             return clientDto;
         }
 
-        [HttpGet]
-        public List<ClientGetDto> GetAll()
+        [HttpPost]
+        public List<ClientGetDto> GetAll(ClientFilterDto model)
         {
-            var clients = _context.ClientInfos
-                .Include(p => p.PayInfo)
-                .ProjectTo<ClientGetDto>(_mapper.ConfigurationProvider)
-                
-                .ToList();
-           // var clientsDto=_mapper.Map<List<ClientGetDto>>(clients);
+            var query = _context.ClientInfos.AsQueryable();
+            if (!string.IsNullOrEmpty(model.Lastname)) query = query.Where(x => x.Lastname.Contains(model.Lastname));
+            if (!string.IsNullOrEmpty(model.Firstname)) query = query.Where(x => x.Firstname.Contains(model.Firstname));
+            if (!string.IsNullOrEmpty(model.Midname)) query = query.Where(x => x.Midname.Contains(model.Midname));
+            if (!string.IsNullOrEmpty(model.Email)) query = query.Where(x => x.Email.Contains(model.Email));
+            if (model.ApartId !=null) query = query.Where(x => x.ApartId==model.ApartId);
+            // var clientsDto=_mapper.Map<List<ClientGetDto>>(clients);
 
             //var clientsDto = clients.Select(x => new ClientGetDto
             //{
@@ -58,7 +60,10 @@ namespace OplataKUWebApi.Controllers
             //})
             //.ToList();
 
-            return clients;
+            return query.Include(p => p.PayInfo)
+            .ProjectTo<ClientGetDto>(_mapper.ConfigurationProvider)
+
+            .ToList(); ;
         }
 
 

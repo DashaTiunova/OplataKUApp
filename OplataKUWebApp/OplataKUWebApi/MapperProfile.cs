@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using ClientInfoData;
-using OplataKUWebApi.Models;
+using OplataKUWebApi.Models.Client;
 
 namespace OplataKUWebApi
 
