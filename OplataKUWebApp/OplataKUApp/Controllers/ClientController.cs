@@ -85,6 +85,11 @@ namespace OplataKUApp.Controllers
 
         #endregion
 
+        public IActionResult Add1()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
