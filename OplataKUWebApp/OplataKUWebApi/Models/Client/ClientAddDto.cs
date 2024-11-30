@@ -13,7 +13,7 @@ namespace OplataKUWebApi.Models.Client
 
         public string Firstname { get; set; }
 
-        public string Midname { get; set; }
+        public string? Midname { get; set; }
 
 
 

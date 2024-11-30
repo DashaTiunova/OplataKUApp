@@ -127,15 +127,15 @@
   },
   {
     "ContainingType": "OplataKUWebApi.Controllers.PayInfoController",
-    "Method": "Add",
-    "RelativePath": "PayInfo/Add",
+    "Method": "Add2",
+    "RelativePath": "PayInfo/Add2",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "model",
-        "Type": "ClientInfoData.PayInfo",
+        "Type": "OplataKUWebApi.Models.Pay.PayAddDto",
         "IsRequired": true
       }
     ],
@@ -203,13 +203,19 @@
     "ContainingType": "OplataKUWebApi.Controllers.PayInfoController",
     "Method": "GetAll",
     "RelativePath": "PayInfo/GetAll",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "OplataKUWebApi.Models.Pay.PayFilterDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[ClientInfoData.PayInfo, ClientInfoData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[OplataKUWebApi.Models.Pay.PayGetDto, OplataKUWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

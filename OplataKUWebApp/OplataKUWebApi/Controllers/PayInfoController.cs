@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OplataKUWebApi.Models;
 using ClientInfoData;
-
+using OplataKUWebApi.Models.Pay;
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using Microsoft.EntityFrameworkCore;
 namespace OplataKUWebApi.Controllers
 {
     [ApiController]
@@ -11,19 +14,23 @@ namespace OplataKUWebApi.Controllers
         private readonly ILogger<PayInfoController> _logger;
 
         private readonly ClientInfoContext _context;
+        private readonly IMapper _mapper;
 
-        public PayInfoController(ILogger<PayInfoController> logger, ClientInfoContext context)
+        public PayInfoController(ILogger<PayInfoController> logger, ClientInfoContext context, IMapper mapper)
         {
             _logger = logger;
             _context = context;
+            _mapper = mapper;
         }
+    
         [HttpPut]
-        public PayInfo Add([FromBody] PayInfo model)
+        public PayInfo Add2([FromBody] PayAddDto model)
         {
-            _context.PayInfos.Add(model);
+            var client = _mapper.Map<PayInfo>(model);
+            _context.PayInfos.Add(client);
             _context.SaveChanges();
 
-            return model;
+            return client;
         }
 
         [HttpGet]
@@ -34,12 +41,18 @@ namespace OplataKUWebApi.Controllers
             return payinfo;
         }
 
-        [HttpGet]
-        public List<PayInfo> GetAll()
+        [HttpPost]
+        public List<PayGetDto> GetAll(PayFilterDto model)
         {
-            var payinfos = _context.PayInfos.ToList();
+            var query = _context.PayInfos.AsQueryable();
+            if (!string.IsNullOrEmpty(model.Street) ) query=query.Where(x => x.Street.Contains( model.Street));
+            if (!string.IsNullOrEmpty(model.Housenumber)) query = query.Where(x => x.Housenumber.Contains(model.Housenumber));
+            if(!string.IsNullOrEmpty(model.Apartnumber)) query = query.Where(x => x.Apartnumber.Contains(model.Apartnumber));
+           
 
-            return payinfos;
+            return query
+                .ProjectTo<PayGetDto>(_mapper.ConfigurationProvider)
+                .ToList();
         }
 
 

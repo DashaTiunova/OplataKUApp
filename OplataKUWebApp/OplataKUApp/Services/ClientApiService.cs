@@ -36,7 +36,24 @@ namespace OplataKUWebApp.Services
 
             return responseData;
         }
-        public async Task<List<PayDto>> GetPayInfo()
+
+        /// <summary>
+        /// проблемы начались тут на фильтре ,нужна ли viewmodel
+        /// </summary>
+
+        public async Task<List<PayDto>?> GetPayInfos(PayFilterDto filter)
+        {
+            var httpClient = new HttpClient();
+            var response = await httpClient.PostAsJsonAsync("http://localhost:5012/PayInfo/GetAll", filter);
+            var responseText = await response.Content.ReadAsStringAsync();
+            var responseData = JsonSerializer.Deserialize<List<PayDto>>(responseText, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            });
+            return responseData;
+        }
+
+        public async Task<List<PayDto>?> GetPayInfo()
         {
             
             var response = await _httpClient.GetAsync("/PayInfo/GetAll");

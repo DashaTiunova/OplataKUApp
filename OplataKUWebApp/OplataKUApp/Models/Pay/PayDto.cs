@@ -7,11 +7,11 @@ namespace OplataKUWebApp.Models.Pay
         [Key]
 
         public int ApartId { get; set; }
-
+        [RegularExpression(@"^[А-Яа-яЁё]*$", ErrorMessage = "Некорректное название")]
         public string? Street { get; set; }
-
+       
         public string? Housenumber { get; set; }
-
+      
         public string? Apartnumber { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using ClientInfoData;
 using OplataKUWebApi.Models.Client;
-
+using OplataKUWebApi.Models.Pay;
 namespace OplataKUWebApi
 
 {
@@ -11,8 +11,8 @@ namespace OplataKUWebApi
         public MapperProfile()
         {
             CreateMap<ClientAddDto, ClientInfo>();
-
-
+            CreateMap<PayAddDto, PayInfo>();
+            CreateMap<PayInfo, PayGetDto>();
             CreateMap<ClientInfo, ClientGetDto>()
                 //.ForMember(dest => dest.ClientId,
                 //opt => opt.MapFrom(src => src.Id))

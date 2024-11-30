@@ -11,6 +11,7 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 namespace OplataKUWebApi.Controllers
 {
     [ApiController]
+
     [Route("[controller]/[action]")]
     public class ClientController(ILogger<ClientController> _logger,
         ClientInfoContext _context,

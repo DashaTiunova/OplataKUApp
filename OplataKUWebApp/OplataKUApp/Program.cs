@@ -15,6 +15,7 @@ namespace OplataKUWebApp
             // Add services to the container.5012
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<ClientApiService>();
+            builder.Services.AddScoped<PayApiService>();
             //http client
             builder.Services.AddHttpClient("ClientApi", httpClient =>
             {

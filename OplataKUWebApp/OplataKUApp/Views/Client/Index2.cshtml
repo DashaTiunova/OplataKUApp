@@ -1,0 +1,65 @@
+﻿@model List<PayDto>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<p><a href="/Client/Add2">Добавить  квартиру</a></p>
+
+<p><a href="/Client/Index">К списку владельцев</a></p>
+
+<h1 class="display-4">Найти  квартиру</h1>
+<div asp-validation-summary="All" class="alert-info"> </div>
+
+    <form method="post" action="/Client/" class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="">
+            <input type="text" name="Street" placeholder="Улица" class="form-control"  />
+        </div>
+
+        <div class="">
+            <input type="text" name="Housenumber" placeholder="Номер дома" class="form-control" />
+        </div>
+
+        <div class="">
+
+            <input type="text" name="Apartnumber" placeholder="Номер квартиры" class="form-control" />
+        </div>
+        
+            <button type="submit" align="text-start" class="btn btn-primary">Найти</button>
+
+       
+    </form>
+<div class="text-start ">
+<h1 class="display-4">Список  квартир</h1>
+
+
+    @if (!string.IsNullOrEmpty(TempData["Message"]?.ToString()))
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["Message"]
+        </div>
+    }
+    <table class="table">
+        <tr>
+            <th>Id квартиры</th>
+            <th>Улица</th>
+            <th>Номер дома</th>
+            <th>Номер квартиры</th>
+        </tr>
+        @foreach(var client in Model)
+        {
+           
+            <tr>
+                <td>@client.ApartId </td>
+                <td>@client.Street</td>
+                <td>@client.Housenumber</td>
+                <td>@client.Apartnumber</td>  
+                <td>
+                    @*Action("Метод","Контроллер",...)*@
+                    <a href=@Url.Action("Remove2","Client", new {id =client.ApartId})>Удалить</a>
+                    <a href=@Url.Action("Edit2","Client", new {id =client.ApartId})>Редактировать</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+
+</div>

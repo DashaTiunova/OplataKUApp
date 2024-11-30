@@ -2626,19 +2626,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tiunova.Daria\\.nuget\\packages\\": {}
+    "C:\\Users\\Dashulkin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\OplataKUApp\\OplataKUWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Dashulkin\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\OplataKUApp\\OplataKUWebApp.csproj",
       "projectName": "OplataKUWebApp",
-      "projectPath": "D:\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\OplataKUApp\\OplataKUWebApp.csproj",
-      "packagesPath": "C:\\Users\\Tiunova.Daria\\.nuget\\packages\\",
-      "outputPath": "D:\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\OplataKUApp\\obj\\",
+      "projectPath": "C:\\Users\\Dashulkin\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\OplataKUApp\\OplataKUWebApp.csproj",
+      "packagesPath": "C:\\Users\\Dashulkin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dashulkin\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\OplataKUApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tiunova.Daria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dashulkin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2653,8 +2653,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj": {
-              "projectPath": "D:\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj"
+            "C:\\Users\\Dashulkin\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj": {
+              "projectPath": "C:\\Users\\Dashulkin\\Тиунова Дарья\\OplataKUApp\\OplataKUWebApp\\ClientInfoData\\ClientInfoData.csproj"
             }
           }
         }

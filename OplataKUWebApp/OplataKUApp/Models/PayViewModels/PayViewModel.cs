@@ -2,7 +2,7 @@
 using OplataKUWebApp.Models.Client;
 
 
-namespace OplataKUWebApp.Models.ClientViewModels
+namespace OplataKUWebApp.Models.PayViewModels
 {
     public class PayViewModel
     {

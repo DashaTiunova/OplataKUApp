@@ -1,0 +1,28 @@
+﻿@model PayAddDto
+@{
+
+}
+<div class="text-center">
+    <h1 class="display-4">Форма добавления  квартиры</h1>
+    <div asp-validation-summary="All" class="text-start alert alert-warning"> </div>
+
+    <form method="post" action="/Client/Add2" class="text-start">
+        <div class="mb-3">
+            <label class="form-label">Улица</label>
+            <input type="text" name="Street" value="@Model?.Street" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Номер дома</label>
+            <input type="text" name="Housenumber" value="@Model?.Housenumber" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Номер квартиры</label>
+            <input type="text" name="Apartnumber" value="@Model?.Apartnumber" class="form-control" />
+        </div>
+
+        
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    </form>
+</div>
