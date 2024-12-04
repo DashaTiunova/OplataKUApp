@@ -56,7 +56,7 @@ namespace OplataKUWebApp.Services
         public async Task<List<PayDto>?> GetPayInfo()
         {
             
-            var response = await _httpClient.GetAsync("/PayInfo/GetAll");
+            var response = await _httpClient.PostAsJsonAsync("/PayInfo/GetAll", new PayFilterDto());
             var responseText = await response.Content.ReadAsStringAsync();
 
             var responseData = JsonSerializer.Deserialize<List<PayDto>>(responseText, _jsonSerializerOptions);
