@@ -1,13 +1,16 @@
-﻿namespace OplataKUWebApp.Models.Client
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OplataKUWebApp.Models.Client
 {
     public class ClientDto
     {  
         public int Id { get; set; }
-
+       
         public string Lastname { get; set; }
-
+        
         public string Firstname { get; set; }
 
+      
         public string? Midname { get; set; }
 
         public string Fullname { get; set; }

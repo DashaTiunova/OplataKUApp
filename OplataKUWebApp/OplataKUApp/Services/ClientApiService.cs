@@ -38,7 +38,7 @@ namespace OplataKUWebApp.Services
         }
 
         /// <summary>
-        /// проблемы начались тут на фильтре ,нужна ли viewmodel
+        //
         /// </summary>
 
         public async Task<List<PayDto>?> GetPayInfos(PayFilterDto filter)
@@ -68,7 +68,7 @@ namespace OplataKUWebApp.Services
 
             return responseData;
         }
-
+        #region удаление
         public async Task<bool> RemoveClient(int id)
         {
             
@@ -77,6 +77,17 @@ namespace OplataKUWebApp.Services
            return response.IsSuccessStatusCode;
             
         }
+        public async Task<bool> RemoveApart(int id)
+        {
+
+            var response = await _httpClient.DeleteAsync($"/PayInfo/Delete?id={id}");
+
+            return response.IsSuccessStatusCode;
+
+        }
+        #endregion удаление
+
+        #region редактирование
         public async Task<ClientDto?> GetClient(int id)
         {
             
@@ -100,6 +111,34 @@ namespace OplataKUWebApp.Services
             return response.IsSuccessStatusCode;
            
         }
+
+        public async Task<PayDto?> GetApart(int id)
+        {
+
+            var response = await _httpClient.GetAsync($"/PayInfo/Get/?id={id}");
+            var responseText = await response.Content.ReadAsStringAsync();
+
+            var responseData = JsonSerializer.Deserialize<PayDto>(responseText, _jsonSerializerOptions);
+            //{
+            //    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            //    //PropertyNameCaseInsensitive = true нечувствител.к регистру
+            //});
+
+            return responseData;
+        }
+
+        public async Task<bool> EditApart(PayDto editdto)
+        {
+
+            var response = await _httpClient.PostAsJsonAsync("PayInfo/Post", editdto);
+
+            return response.IsSuccessStatusCode;
+
+        }
+
+        #endregion редактирование
+
+        #region добавление
         public async Task<bool> AddClient(ClientAddDto adddto)
         {
             
@@ -108,5 +147,15 @@ namespace OplataKUWebApp.Services
             return response.IsSuccessStatusCode;
 
         }
+        public async Task<bool> AddApart(PayAddDto adddto)
+        {
+
+            var response = await _httpClient.PutAsJsonAsync("/PayInfo/Add2", adddto);
+
+            return response.IsSuccessStatusCode;
+
+        }
+
+        #endregion добавление
     }
 }

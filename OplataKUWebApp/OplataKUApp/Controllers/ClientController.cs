@@ -171,37 +171,44 @@ namespace OplataKUApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Add2(PayAddDto paydto)
         {
-            var httpClient = new HttpClient();
-            var response = await httpClient.PutAsJsonAsync("http://localhost:5012/PayInfo/Add2", paydto);
-            if(!response.IsSuccessStatusCode)
+            if (!ModelState.IsValid)
             {
-                ModelState.AddModelError("api_error", "Ошибка валидации данных");
+
                 return View();
             }
+
+            var result = await _clientApiService.AddApart(paydto);
+            if (!result)
+            {
+                ModelState.AddModelError("api_error", "Ошибка валидации данных");
+                return View(paydto);
+            }
+
             return RedirectToAction("Index2");
 
         }
         [HttpGet]
         public IActionResult Add2()
         {
+            
+            var model = new PayAddDto();
 
-            return View();
+
+            return View(model);
+
+
         }
 
         #endregion добавление квартиры
 
         #region удаление квартиры
 
-        
+
         public async Task<IActionResult> Remove2(int id)
         {
-            var httpClient = new HttpClient();
-            var response = await httpClient.DeleteAsync($"http://localhost:5012/PayInfo/Delete?id={id}");
-            if (!response.IsSuccessStatusCode)
-            {
-                //удаление не удалось
-            }
-            TempData["Message"] = "Пользователь был удален";
+            var result = await _clientApiService.RemoveApart(id);
+            TempData["Message"] = result ? "Квартира была удалена" : "Ошибка удаления";
+
             return RedirectToAction(nameof(Index2));
 
         }
@@ -212,9 +219,10 @@ namespace OplataKUApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit2(PayDto paydto)
         {
-            var httpClient = new HttpClient();
-            var response = await httpClient.PostAsJsonAsync("http://localhost:5012/PayInfo/Post", paydto);
-            if (!response.IsSuccessStatusCode)
+            
+            var result = await _clientApiService.EditApart(paydto);
+
+            if (!result)
             {
                 ModelState.AddModelError("api_error", "Ошибка валидации данных");
                 return View(paydto);
@@ -225,14 +233,10 @@ namespace OplataKUApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit2(int id)
         {
-            var httpClient = new HttpClient();
-            var response = await httpClient.GetAsync($"http://localhost:5012/PayInfo/Get?id={id}");
-            var responseText = await response.Content.ReadAsStringAsync();
-            var responseData = JsonSerializer.Deserialize<PayDto>(responseText, new JsonSerializerOptions
-            {
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-            });
-            return View(responseData);
+            var client = await _clientApiService.GetApart(id);
+
+            
+            return View(client);
         }
 
         #endregion Редактирование квартиры
